@@ -1,5 +1,5 @@
 package com.mobileprogramming.mvpkotlin.Presenter
 
-interface LoginPresenterImpl {
+interface LoginPresenter {
     fun onLogin(email: String,password: String)
 }

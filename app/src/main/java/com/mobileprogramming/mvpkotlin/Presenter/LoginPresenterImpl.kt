@@ -3,7 +3,7 @@ package com.mobileprogramming.mvpkotlin.Presenter
 import com.mobileprogramming.mvpkotlin.Model.User
 import com.mobileprogramming.mvpkotlin.View.LoginView
 
-class LoginPresenter(internal var LoginView: LoginView) : LoginPresenterImpl {
+class LoginPresenterImpl(internal var LoginView: LoginView) : LoginPresenter {
 
     override fun onLogin(email: String, password: String) {
         val user = User(email, password)
@@ -13,5 +13,6 @@ class LoginPresenter(internal var LoginView: LoginView) : LoginPresenterImpl {
         else
             LoginView.onLoginResult("Error!")
     }
+
 
 }
